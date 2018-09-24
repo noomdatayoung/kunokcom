@@ -297,6 +297,11 @@ function clk() {
         document.getElementById("disp").innerHTML=a.getFullYear()+"/"+(a.getMonth()+1)+"/"+a.getDate()+" "+a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds() ;
        setTimeout(clk,1000);
     }
+function addOption(a,b){
+	var select = document.getElementById("myurl");
+	select.options[select.options.length] = new Option(a, b);	
+}	
+addOption("dty","http://datayoung.com");
 	//clk();
 	home();
 </script> 

@@ -1,0 +1,26 @@
+<select id="dynamic-select">
+  <option value="1">one</option>
+  <option value="2">two</option>
+  <option value="3">three</option>
+</select>
+
+<button onclick='addOption("hello")'>add item</button>
+<button onclick="removeOption()">remove item</button>
+<button onclick="removeAllOptions()">remove all</button>
+<script>
+function addOption(a){
+	var select = document.getElementById("dynamic-select");
+	select.options[select.options.length] = new Option(a, '0');
+	select.options[select.options.length] = new Option(a, '3');
+}
+
+function removeOption(){
+	var select = document.getElementById("dynamic-select");
+	select.options[select.options.length - 1] = null;
+}
+
+function removeAllOptions(){
+	var select = document.getElementById("dynamic-select");
+	select.options.length = 0;
+}
+</script>
