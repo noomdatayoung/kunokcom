@@ -1,2 +1,2 @@
 alert("hi");
-cc="CCSSC";
+cc="tytyty";
