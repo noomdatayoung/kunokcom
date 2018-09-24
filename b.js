@@ -5,3 +5,4 @@ dd="dffddf","fdfdf"
 	select.options[select.options.length] = new Option(a, b);	
 }	
 
+loadjs("c.js");
