@@ -248,7 +248,10 @@ swiss made</option>
   Your browser does not support HTML5 audio.<br>
 </audio>
 </div>
+<div class="wrap">
+<div class="pull-tab"></div>
 <iframe allowfullscreen="1" src=""  id="search_iframe" frameborder="0" ></iframe>
+</div>
 <script> 
 	document.getElementById("myurl").selectedIndex=0;
 	document.getElementById("mySelect").selectedIndex=0;
@@ -306,3 +309,30 @@ function addOption(a,b){
 	//clk();
 	home();
 </script> 
+<style>
+.wrap {
+  overflow: hidden;
+  resize: both;
+  position: relative;
+  wwidth: 100%;
+}
+iframe {
+  height: 90%;
+  width: 100%;
+  border: none;
+  background: white;
+  z-index: 1;
+}
+.pull-tab {
+    height: 0px;
+    width: 0px;
+    border-top: 15px solid grey;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 0;
+    right: -9px;
+    pointer-events: none;
+    z-index: 2;
+}</style>
